@@ -18,12 +18,14 @@ app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('/api/tussi', function(req, res, next) {
 
-    res.send([
+    var tussit = [
         'tussi',
         'tussi2',
         'tussi3',
         'tussi4',
-    ]);
+    ];
+
+    res.send(tussit);
 
 });
 
