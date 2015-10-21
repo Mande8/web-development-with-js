@@ -1,8 +1,28 @@
 $red: rgba(255, 0, 0, 1);
 
+body {
+    margin: 0 100px;
+}
+
 h1 {
     color: $red
 }
 
+.nappula {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: lightGray;
 
+    button {
+        margin-left: 50px;
+    }
+}
 
+.megaNappula {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 200px;
+    font-weight: bold;
+    color: pink;
+    background-color: purple;
+}
