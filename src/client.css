@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-    color: $red
+    color: $red;
+    line-height: 10px;
 }
 
 .nappula {
@@ -25,4 +26,19 @@ h1 {
     font-weight: bold;
     color: gray;
     background-color: whiteSmoke;
+}
+
+.card {
+    width: 80px;
+    height: 150px;
+    margin: 3px;
+    padding: 10px;
+    background-color: whiteSmoke;
+}
+
+.list {
+    float: left;
+    margin: 3px;
+    padding: 10px;
+    background-color: lightGray;
 }
