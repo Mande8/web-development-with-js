@@ -20,10 +20,10 @@ app.use(require('webpack-hot-middleware')(compiler));
 app.get('/api/tussi', function(req, res, next) {
 
     var tussit = [
-        'tussi',
-        'tussi2',
-        'tussi3',
-        'tussi4',
+        'Ismo',
+        'Seppo',
+        'Kari',
+        'Ulla',
     ];
 
     res.send(tussit);

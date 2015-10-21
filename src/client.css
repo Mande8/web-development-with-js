@@ -21,8 +21,8 @@ h1 {
 .megaNappula {
     margin-top: 20px;
     padding: 20px;
-    font-size: 200px;
+    font-size: 100px;
     font-weight: bold;
-    color: pink;
-    background-color: purple;
+    color: gray;
+    background-color: whiteSmoke;
 }
