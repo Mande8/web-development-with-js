@@ -5,9 +5,9 @@ export default React.createClass({
     render: function() {
         return (
             <div className="list">
-                List
-                <Card />
-                <Card />
+                {this.props.name}
+
+                {this.props.children}
             </div>
         );
     },

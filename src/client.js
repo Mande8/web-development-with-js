@@ -10,6 +10,8 @@ import Greeter from './components/Greeter';
 import Index from './components/Index';
 import HelloWorldApp from './components/HelloWorldApp';
 import KrelloApp from './components/KrelloApp';
+import NewCard from './components/NewCard';
+import KrelloIndex from './components/KrelloIndex';
 
 const routes = (
     <Router history={history}>
@@ -19,7 +21,8 @@ const routes = (
         </Route>
 
         <Route path="/krello" component={KrelloApp}>
-
+            <IndexRoute component={KrelloIndex} />
+            <Route path="new" component={NewCard} />
         </Route>
     </Router>
 );
