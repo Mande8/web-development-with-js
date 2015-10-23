@@ -9,7 +9,8 @@ export default React.createClass({
         const card = {
             id: uuid.v4(),
             title: this.refs.title.value,
-            description: this.refs.description.value
+            description: this.refs.description.value,
+            list: this.refs.list.value
         };
 
         this.props.addCard(card);
@@ -22,8 +23,14 @@ export default React.createClass({
                 <h3>Create a new card</h3>
 
                 <form onSubmit={this.handleSubmit}>
-                    Title: <input type="text" name="title" ref="title" /><br />
-                    Description: <input type="text" name="description" ref="description" /><br />
+                    Title: <input type="text" ref="title" /><br />
+                    Description: <input type="text" ref="description" /><br />
+                    Add to list:
+                    <select ref="list">
+                        <option value="todo">Todo</option>
+                        <option value="doing">Doing</option>
+                        <option value="done">Done</option>
+                    </select><br />
                     <button type="submit">Create</button>
                 </form>
             </div>

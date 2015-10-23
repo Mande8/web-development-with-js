@@ -1,11 +1,16 @@
 $red: rgba(255, 0, 0, 1);
 
 body {
-    margin: 0 100px;
+    margin: 50px 100px;
 }
 
 h1 {
     color: $red;
+    line-height: 0px
+}
+
+h4 {
+    margin-bottom: 70px;
 }
 
 .nappula {
@@ -40,4 +45,8 @@ h1 {
     margin: 3px;
     padding: 10px;
     background-color: lightGray;
+}
+
+.done {
+    text-decoration: line-through;
 }

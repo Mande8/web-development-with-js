@@ -15,13 +15,15 @@ export default React.createClass({
         this.setState({
             cards: this.state.cards.push(card)
         });
+
+        this.props.history.pushState(null, '/krello');
     },
 
     render: function() {
-
         return (
             <div>
                 <h1>Krello</h1>
+                <h4>Niinkuin Trello mutta huonompi.</h4>
 
                 {this.props.children && React.cloneElement(
                     this.props.children,
